@@ -1,0 +1,117 @@
+@nodeHeight: 36px;
+@nodeWidth: 180px;
+@iconWidth: 36px;
+@iconFontSize: 22px;
+@labelWidth: 100px;
+@labelFontSize: 10px;
+
+// code node 
+.xflow-code-node{
+    z-index: 10;
+    display: flex;
+    width: @nodeWidth;
+    height: @nodeHeight;
+    line-height: @nodeHeight;
+    text-align: center;
+    background-color: var(--editor-canvasNodeBackground);
+    border: 1px solid var(--editor-canvasNodeBorder);
+    border-radius: 10px;
+    transition: all ease-in-out 0.15s;
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: @iconWidth;
+        font-size: @iconFontSize;
+        color: var(--editor-canvasCodeNodeIcon);
+    }
+    .label {
+        width: @labelWidth;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: @labelFontSize;
+        color: var(--editor-canvasNodeLabel);
+        font-weight: 500;
+    }
+    .status {
+        width: 36px;
+    }
+    &.panel-node {
+        border: 0;
+    }
+
+    &:hover {
+        background-color: var(--editor-canvasNodeHoverBackground);
+        border: 1px solid var(--editor-canvasNodeHoverBorder);
+        box-shadow: 0 0 1px 1px var(--editor-canvasNodeHoverBorder);
+        cursor: move;
+    }
+}
+
+.x6-node-selected {
+    .xflow-code-node {
+        background-color: var(--editor-canvasNodeHoverBackground);
+        border: 1px solid var(--editor-canvasNodeHoverBorder);
+        box-shadow: 0 0 1px 1px var(--editor-canvasNodeHoverBorder);
+        &:hover {
+            background-color: var(--editor-canvasNodeHoverBackground);
+            box-shadow: 0 0 1px 1px var(--editor-canvasNodeHoverBorder);
+        }
+    }
+}
+
+
+// source node 
+.xflow-source-node{
+    z-index: 10;
+    display: flex;
+    width: @nodeWidth;
+    height: @nodeHeight;
+    line-height: @nodeHeight;
+    text-align: center;
+    background-color: var(--editor-canvasNodeBackground);
+    border: 1px solid var(--editor-canvasNodeBorder);
+    border-radius: 10px;
+    transition: all ease-in-out 0.15s;
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: @iconWidth;
+        font-size: @iconFontSize;
+        color: var(--editor-canvasSourceNodeIcon);
+    }
+    .label {
+        width: @labelWidth;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: @labelFontSize;
+        color: var(--editor-canvasNodeLabel);
+        font-weight: 500;
+    }
+    .status {
+        width: 36px;
+    }
+    &.panel-node {
+        border: 0;
+    }
+
+    &:hover {
+        background-color: var(--editor-canvasNodeHoverBackground);
+        border: 1px solid var(--editor-canvasNodeHoverBorder);
+        box-shadow: 0 0 1px 1px var(--editor-canvasNodeHoverBorder);
+        cursor: move;
+    }
+}
+
+.x6-node-selected {
+    .xflow-source-node {
+        background-color: var(--editor-canvasNodeHoverBackground);
+        border: 1px solid var(--editor-canvasNodeHoverBorder);
+        box-shadow: 0 0 1px 1px var(--editor-canvasNodeHoverBorder);
+        &:hover {
+            background-color: var(--editor-canvasNodeHoverBackground);
+            box-shadow: 0 0 1px 1px var(--editor-canvasNodeHoverBorder);
+        }
+    }
+}

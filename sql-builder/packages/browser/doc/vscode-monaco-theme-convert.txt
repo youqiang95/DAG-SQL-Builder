@@ -1,0 +1,7 @@
+npx monaco-vscode-textmate-theme-converter -i <input-file-or-folder-path> -o <output-file-or-folder-path>
+
+# e.g. convert a single file
+# npx monaco-vscode-textmate-theme-converter -i ./vscode-theme.json -o ./monaco-converted-theme.json
+
+# e.g. convert a directory of vscode theme files
+# npx monaco-vscode-textmate-theme-converter -i ./vscode-themes -o ./monaco-converted-themes

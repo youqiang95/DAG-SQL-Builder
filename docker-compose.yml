@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  data-warehouse-runner:
+    build:
+      context: ./data-warehouse-runner
+      dockerfile: Dockerfile
+    ports:
+      - 9001:9001
+
+  sql-build:
+    build:
+      context: ./sql-builder
+      dockerfile: Dockerfile
+    environment:
+      - PROD_ENV=false
+      - STORAGE_BASE_DIR=/var/dag-sql-builder-storage
+      - DATA_WARE_HOUSE_RUNNER_URL=http://data-warehouse-runner:9001
+    ports:
+      - 9000:9000
+    depends_on:
+      - data-warehouse-runner

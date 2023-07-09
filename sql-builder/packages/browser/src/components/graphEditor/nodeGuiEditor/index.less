@@ -1,0 +1,131 @@
+.node-gui-editor {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    margin-left: 20px;
+    // display: flex;
+    background: var(--editor-background);
+    ::-webkit-scrollbar {
+        background-color: var(--editor-background);
+        border: none;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--editor-foreground);
+    }
+    ::-webkit-scrollbar-corner {
+        background-color: var(--editor-background)
+    }
+
+    .node-gui-editor-main {
+        .node-gui-editor-main-title {
+            position: absolute;
+            top:0;
+            height: 50px;
+            color: var(--editor-foreground);
+        }
+        .node-gui-editor-main-tabs {
+            position: absolute;
+            bottom: 0;
+            top: 40px;
+            left:0;
+            right:0;
+
+            .ant-tabs-nav {
+                position: absolute;
+                top:0;
+                left:0;
+                right:0;
+                height: 50px;
+            }
+
+            .ant-tabs-content-holder {
+                position: absolute;
+                top:70px;
+                left:0;
+                right:0;
+                bottom: 0;
+
+                .ant-tabs-content {
+                    position: absolute;
+                    top:0;
+                    right:0;
+                    left:0;
+                    bottom: 0;
+
+                    .editable-table-operate {
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        right:0;
+                        height: 50px;
+                        display: flex;
+                    }
+
+                    .ant-table-wrapper {
+                        position: absolute;
+                        top: 60px;
+                        left:0;
+                        right:0;
+                        bottom: 0;
+                        overflow: scroll;
+                        margin-bottom: 10px;
+                        word-break: break-all; 
+                        white-space: normal;
+
+                        td {
+                            position: relative;
+                            overflow: visible;
+
+                            .editable-cell-editor {
+                                position: absolute;
+                                top:0;
+                                left:0;
+                                width: 700px;
+                                z-index: 999;
+                                border: 1px solid var(--editor-foreground);
+
+                                .editable-cell-editor-button {
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    .node-sql-editor-tool {
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        right:0;
+                        height: 50px;
+                        display: flex;
+                    }
+    
+                    .node-sql-editor-content {
+                        position: absolute;
+                        top: 60px;
+                        bottom: 0;
+                        left:0;
+                        right: 0;
+                    }
+                }
+
+                .editable-table-batch-edit-button {
+                    position: relative;
+                
+                    .editable-table-batch-editor {
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        width: 700px;
+                        z-index: 999;
+                        border: 1px solid var(--editor-foreground);
+                    }
+                }
+
+
+            }
+        }
+    }
+}

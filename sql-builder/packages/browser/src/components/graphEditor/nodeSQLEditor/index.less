@@ -1,0 +1,136 @@
+@toolBarHeight: 33px;
+
+.node-sql-editor {
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    color: #dee1f0;
+    font-size: 12px;
+    line-height: 1.28571;
+    margin-left: 20px;
+
+    .node-sql-editor-toolbar {
+        height: @toolBarHeight;
+        background: #3a3d51;
+        border-bottom: 1px solid #3a3d51;
+
+        .tool-list {
+            height: 100%;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-direction: row;
+            -webkit-box-align: center;
+            align-items: center;
+
+            .button-span {
+                color: #dee1f0;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                padding: 6px 12px;
+                line-height: 20px;
+                position: relative;
+
+                .button {
+                    color: #dee1f0;
+                    margin-right: 0;
+                    height: 20px;
+                    display: flex;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    border-radius: 0;
+                    padding: 0;
+                    font-size: 12px;
+                    border-width: 0;
+                    background: transparent;
+                    border-color: transparent;
+
+                    &:before {
+                        display: inline-block;
+                        vertical-align: middle;
+                        content: "";
+                        height: 100%;
+                        width: 0;
+                    }
+
+                    .fa.fa-file-code-o  {
+                        font-size: 16px;
+                        font-style: normal;
+                        -webkit-font-smoothing: antialiased;
+                    }
+                        
+                    
+
+                    &:hover {
+                        color: #00c1de;
+                        background: transparent;
+                        border-color: transparent;
+                        text-decoration: none;
+                    }
+
+                    .button-label {
+                        margin-left: 6px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+
+    .node-code-editor-main-tabs {
+        position: absolute;
+        bottom: 0;
+        top: 40px;
+        left:0;
+        right:0;
+
+        .ant-tabs-nav {
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            height: 50px;
+        }
+
+        .ant-tabs-content-holder {
+            position: absolute;
+            top:50px;
+            left:0;
+            right:0;
+            bottom: 0;
+
+            .ant-tabs-content {
+                position: absolute;
+                top:0;
+                right:0;
+                left:0;
+                bottom: 0;
+
+                .node-sql-editor-tool {
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    right:0;
+                    height: 50px;
+                    display: flex;
+                }
+
+                .node-sql-editor-content {
+                    position: absolute;
+                    // top: 60px;
+                    bottom: 0;
+                    left:0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+.ant-typography {
+    user-select: text;
+  }

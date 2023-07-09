@@ -1,0 +1,16 @@
+{
+  "name": "dag-sql-builder",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "install-deps": "cd packages/browser && yarn install && cd ../server && yarn install && cd ../../",
+    "clean-deps": "cd packages/browser && rm -rf ./node_modules && cd ../server && rm -rf ./node_modules && cd ../../",
+    "build-browser": "cd packages/browser && yarn build",
+    "build-server": "cd packages/server && yarn build",
+    "build": "yarn build-browser && yarn build-server",
+    "start": "cd packages/server && npm run start",
+    "dev-browser": "cd packages/browser && yarn dev",
+    "dev-server": "cd packages/server && yarn dev"
+  }
+}

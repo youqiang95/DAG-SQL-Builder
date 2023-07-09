@@ -1,0 +1,34 @@
+.sql-builder-xflow {
+    position: absolute;
+    right:36px;
+
+    .xflow-x6-canvas {
+        background: var(--editor-canvasBackground);
+    }
+
+    .canvasScaleTool {
+        background: var(--editor-canvasScaleToolBackground);
+        .x6-toolbar-item {
+            color: var(--editor-canvasScaleToolColor)
+        }
+    }
+
+    .x6-edge.x6-edge-selected path:nth-child(2){
+        stroke: #00c1de;
+        stroke-width: 2px;    
+    }
+    .x6-edge.hoverHighlight path:nth-child(2){
+        stroke: #00c1de;
+        stroke-width: 2px;
+    }
+    .x6-edge {
+        path:nth-child(2) {
+            stroke: var(--editor-canvasEdge);
+            stroke-width: 1px;
+        }
+        &:hover path:nth-child(2){
+            stroke: #00c1de;
+            stroke-width: 2px;
+        }
+    }  
+}

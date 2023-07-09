@@ -1,0 +1,49 @@
+.node-source-editor {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+
+    ::-webkit-scrollbar {
+        background-color: var(--editor-background);
+        border: none;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--editor-foreground);
+    }
+    ::-webkit-scrollbar-corner {
+        background-color: var(--editor-background)
+    }
+
+    .ant-table-wrapper {
+        position: absolute;
+        top: 60px;
+        left:0;
+        right:0;
+        bottom: 0;
+        overflow: scroll;
+        margin-bottom: 10px;
+        word-break: break-all; 
+        white-space: normal;
+        margin-left: 10px;
+
+        td {
+            position: relative;
+            overflow: visible;
+
+            .editable-cell-editor {
+                position: absolute;
+                top:0;
+                left:0;
+                width: 700px;
+                z-index: 999;
+                border: 1px solid var(--editor-foreground);
+
+                .editable-cell-editor-button {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

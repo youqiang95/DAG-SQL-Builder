@@ -1,0 +1,5 @@
+https://github.com/antlr/antlr4/blob/master/doc/typescript-target.md
+
+https://github.com/antlr/antlr4/blob/master/doc/tool-options.md
+
+antlr4 -Dlanguage=TypeScript  HiveSqlLexer.g4 HiveSql.g4 -o ./ -visitor

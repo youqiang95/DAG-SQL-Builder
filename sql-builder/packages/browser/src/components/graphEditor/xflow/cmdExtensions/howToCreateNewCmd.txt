@@ -1,0 +1,5 @@
+1. add new cmd define to cmdDefines.ts
+
+2. add file cmd-xxx.tsx, create namespace and implement class
+
+3. import namespace and class to index.ts/commandContributions
